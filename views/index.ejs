@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/offcanvas/offcanvas.css">
+</head>
+
+<style>
+    .container {
+        max-width: 1500px;
+    }
+</style>
+
+<body>
+    <br>
+
+    <div class="container">
+
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+            <img class="mr-3" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-outline.svg" alt=""
+                width="48" height="48">
+            <div class="lh-100">
+                <h6 class="mb-0 text-white lh-100"><%= empresa[0].CompanyName %></h6>
+            </div>
+        </div>
+
+
+        <table class="table tableClient table-bordered">
+            <tbody>
+                <tr class="thead-dark text-center">
+                    <th>AuditFileVersion</th>
+                    <td><%= empresa[0].AuditFileVersion %></td>
+                    <th>CompanyID</th>
+                    <td><%= empresa[0].CompanyID %></td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>TaxRegistrationNumber</th>
+                    <td><%= empresa[0].TaxRegistrationNumber %></td>
+                    <th>TaxAccountingBasis</th>
+                    <td><%= empresa[0].TaxAccountingBasis %></td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>CompanyName</th>
+                    <td>EDULAB - Laboratï¿œrio de Edulcorantes, Lda.</td>
+                    <th>AddressDetail</th>
+                    <td>Zona Industrial de Palmela Vila Amï¿œlia, lote 113-C</td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>City</th>
+                    <td>Quinta do Anjo</td>
+                    <th>PostalCode</th>
+                    <td>2950-501</td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>Country</th>
+                    <td>PT</td>
+                    <th>FiscalYear</th>
+                    <td>2019</td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>StartDate</th>
+                    <td>2019-07-01</td>
+                    <th>EndDate</th>
+                    <td>2019-07-31</td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>CurrencyCode</th>
+                    <td>EUR</td>
+                    <th>DateCreated</th>
+                    <td>2020-05-12</td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>TaxEntity</th>
+                    <td>Global</td>
+                    <th>ProductCompanyTaxID</th>
+                    <td>501848487</td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>SoftwareCertificateNumber</th>
+                    <td>75</td>
+                    <th>ProductID</th>
+                    <td>ARTSOFT/TI Tecnologia Informï¿œtica SA</td>
+                </tr>
+                <tr class="thead-dark text-center">
+                    <th>ProductVersion</th>
+                    <td>850</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
